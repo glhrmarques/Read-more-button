@@ -1,0 +1,42 @@
+* {
+    font-family: roboto;
+}
+
+.container { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text {
+    color: #3d3d3d;
+}
+
+button { 
+    padding: 1rem 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #FF8C69;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    color: #fafafa;
+    cursor: pointer;
+    &:hover{
+        background-color: #CC7054;
+    }
+}
+
+.more-text {
+    display: none;
+}
+
+.text.show-more .more-text{
+    display: inline;
+}
+
+.text.show-more #dots {
+    display: none;
+}
